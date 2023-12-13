@@ -24,7 +24,7 @@ for type in "${types[@]}"; do
     --input=$nes/$index/$type \
     --output=$nes/$backup \
     --type=data \
-    --limit=1000
+    --limit=$limit
 
   # Get the count of documents in the source index
   source_count=$(curl -s "$nes/$index/$type/_count" | jq '.count')
