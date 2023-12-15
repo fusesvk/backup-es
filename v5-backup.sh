@@ -3,10 +3,6 @@
 # Source the config file
 source ./config.sh
 
-# Get the current date in ddmmyy format
-current_date=$(date +%d%m%y)
-backup="backup-$index-$current_date"
-
 echo "Backup index: $backup"
 
 # Declare an array to store the results
