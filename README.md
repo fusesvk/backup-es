@@ -33,4 +33,12 @@
   }
   ```
 
-1. Edit values in config.sh where `index` is backup index and `types` are the types that you want to restore. Then run `./v5-backup.sh`
+1. Edit values in config.sh as below:
+    ```
+    index=backup_index
+    backup=source_index
+    types=type1,type2
+    ```
+   Then run `./v5-backup.sh`
+
+Note: limit can be set to other value based on index size. Default is 1000.

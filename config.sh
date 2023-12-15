@@ -1,8 +1,12 @@
 # elasticsearch url
-nes="http://kbank-es-prod-lb.convolab.ai:9200" 
+nes="http://localhost:9200" 
 # source index
-index="njoin-kbank-lineapi-prod02"
+index="njoin-nuser"
 # types to backup/restore
-types=("flow" "flow-Linklogic" "account" "variables")
+types=("type1" type2)
 # limit of batch size
-limit=10
+limit=1000
+# backup index
+current_date=$(date +%d%m%y) # Get the current date in ddmmyy format
+backup="backup-$index-$current_date"
+
