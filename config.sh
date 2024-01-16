@@ -3,7 +3,7 @@ nes="http://localhost:9200"
 # source index
 index="njoin-nuser"
 # types to backup/restore
-types=("type1" type2)
+types=("type1" "type2")
 # limit of batch size
 limit=1000
 # backup index
